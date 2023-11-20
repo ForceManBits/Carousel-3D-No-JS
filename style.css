@@ -46,7 +46,7 @@ body h1{
     height: 100%;
     transform-style: preserve-3d;
     /* o elemento animation vai rotacionar em 360 graus durante 40 segs infinitamente e adiante */
-    animation: rotate360 40s  infinite forwards;
+    animation: rotate360 50s  infinite forwards;
 
 }
 
@@ -140,3 +140,9 @@ transform: rotateY(80deg) translateZ(430px) ;
     transform: rotateY(320deg) translateZ(430px) ;
 }
 
+footer{
+    margin-top: 590px;
+    color: #000;
+
+
+}
