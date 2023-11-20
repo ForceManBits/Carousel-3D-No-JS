@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    background-image: url(https://staticdelivery.nexusmods.com/mods/2751/images/thumbnails/798/798-1600863312-1511229545.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+
+}
+
+body h1{
+    text-align: center;
+    box-shadow: 5px 5px 5px #000;
+
+
+}
+
+
+.container{
+    /*  */
+    position: relative;
+    width:320px;
+
+    /* na margin há uma ordem. , 100px "parte superior" auto1 "parte esquerda", 0px "parte inferior" e auto2 "parte direita" */
+    margin:100px auto 0px auto;
+
+    /* perspective indica profundidade, o tamanho dessa profundidade */
+    perspective:2200px; 
+
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* o elemento animation vai rotacionar em 360 graus durante 40 segs infinitamente e adiante */
+    animation: rotate360 40s  infinite forwards;
+
+}
+
+
+
+
+.imagem{
+    position:absolute;
+
+    /* referente ao elemento pai */
+    
+    top:40px;
+    left:10px;
+    right:10px;
+    width: 290px;
+    height:187px;
+    background-size: cover;
+    display:flex;
+
+
+}
+
+.imagem span{
+    font-size: 1.2m;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from{
+        transform: rotateY(0deg );
+
+    }
+    
+    to{
+            transform:rotateY(-360deg);
+        }
+
+
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://sm.ign.com/ign_pt/news/v/vergil-is-/vergil-is-coming-to-devil-may-cry-5-on-ps4-and-xbox-one-via_xf6f.jpg);
+
+transform: rotateY(0deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://i.redd.it/vwb5uzbbay051.jpg);
+
+transform: rotateY(40deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/450744765044787416/2A4DCE5D23F44E0FE2430C6E04673B70DA25E423/?imw=1024&imh=768&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    
+
+transform: rotateY(80deg) translateZ(430px) ;
+}
+.imagem:nth-child(4){
+    background-image: url(https://i.redd.it/junryzcz9srb1.jpg);
+
+    transform: rotateY(120deg) translateZ(430px) ;
+}
+.imagem:nth-child(5){
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b5a9e206-00ab-471f-b947-3a9f92bd10dd/dd2lu8a-4b8b386f-b9bc-4506-9bde-3adbfc5ba1c0.jpg/v1/fill/w_1920,h_1669,q_75,strp/vergil_devil_trigger_devil_may_cry_5_by_nomada_warrior_dd2lu8a-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY2OSIsInBhdGgiOiJcL2ZcL2I1YTllMjA2LTAwYWItNDcxZi1iOTQ3LTNhOWY5MmJkMTBkZFwvZGQybHU4YS00YjhiMzg2Zi1iOWJjLTQ1MDYtOWJkZS0zYWRiZmM1YmExYzAuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.USxMW3QABL4Li-AR2Wn6WK8I-QN9aFlEGJAs1ygZJ2g);
+
+    transform: rotateY(1600deg) translateZ(430px) ;
+}
+.imagem:nth-child(6){
+    background-image: url(https://i.ytimg.com/vi/r3a77hQcauk/maxresdefault.jpg);
+    outline: #000;
+    transform: rotateY(200deg) translateZ(430px) ;
+    box-shadow: 5px 5px 5px #000;
+}
+.imagem:nth-child(7){
+    background-image: url(https://i.ytimg.com/vi/xJTZDl0TKos/maxresdefault.jpg);
+
+    transform: rotateY(240deg) translateZ(430px) ;
+}
+.imagem:nth-child(8){
+    background-image: url(https://media.tenor.com/FUNoLDh9xfYAAAAC/hello-chat-vergil.gif);
+    
+    transform: rotateY(280deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://pm1.aminoapps.com/6725/344438bcaf38d260c16a20ecfba95c5aa10d3c46v2_00.jpg);
+
+    transform: rotateY(320deg) translateZ(430px) ;
+}
+
